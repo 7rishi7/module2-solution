@@ -1,58 +1,125 @@
+/*basic style*/
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    body {
+        background-color: white;
+    }
+
+    h1 {
+       margin-bottom: 15px;
     text-align: center;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 20px 0;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-}
-
-.box {
-    position: relative;
-    border: 1px solid black;
-    padding: 20px;
-    background-color: #f4a261;
-    margin: 10px;
-    text-align: left;
-}
-
-.title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #264653;
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    border: 1px solid black;
-}
-
-
-@media (min-width: 992px) {
-    .box {
-        width: 30%;
+    color: #ff4532;
+    font-size: 50px;
     }
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .box {
-        width: 45%;
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
     }
-}
 
-@media (max-width: 767px) {
-    .box {
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 3.5px solid black;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
     }
-}
+
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
+
+    }
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FF0000;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        border: 3.5px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
